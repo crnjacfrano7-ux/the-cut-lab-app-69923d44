@@ -192,7 +192,7 @@ export default function Dashboard() {
               </div>
               <div>
                 <p className="text-sm text-muted-foreground">Projected Revenue</p>
-                <p className="text-3xl font-bold">${totalRevenue.toFixed(2)}</p>
+                <p className="text-3xl font-bold">{totalRevenue.toFixed(2)} BAM</p>
               </div>
             </div>
           </motion.div>
@@ -275,7 +275,7 @@ export default function Dashboard() {
                           {appointment.status}
                         </Badge>
                         <span className="font-bold text-primary">
-                          ${Number(appointment.service?.price).toFixed(2)}
+                          {Number(appointment.service?.price).toFixed(2)} BAM
                         </span>
                       </div>
                     </div>

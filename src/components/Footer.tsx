@@ -9,7 +9,7 @@ export function Footer() {
           {/* Brand */}
           <div className="md:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
-              <img src="/favicon.jpeg" alt="Meštar Barber Shop" className="w-10 h-10 object-contain" />
+              <img src="/favicon.png" alt="Meštar Barber Shop" className="w-10 h-10 object-contain" />
               <span className="font-serif text-xl font-bold">Meštar Barber Shop</span>
             </Link>
             <p className="text-muted-foreground text-sm">

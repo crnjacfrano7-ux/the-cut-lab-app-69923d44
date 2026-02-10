@@ -30,7 +30,7 @@ export function Header() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2">
-            <img src="/favicon.jpeg" alt="Meštar Barber Shop" className="w-10 h-10 object-contain" />
+            <img src="/favicon.png" alt="Meštar Barber Shop" className="w-10 h-10 object-contain" />
             <span className="font-serif text-xl font-bold">Meštar Barber Shop</span>
           </Link>
 

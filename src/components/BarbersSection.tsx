@@ -22,7 +22,7 @@ export function BarbersSection() {
   };
 
   return (
-    <section id="barbers" className="py-24 bg-gradient-dark">
+    <section id="barbers" className="py-24 bg-gradient-section">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

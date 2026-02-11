@@ -51,15 +51,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        gold: {
-          DEFAULT: "hsl(43, 65%, 52%)",
-          light: "hsl(43, 65%, 60%)",
-          dark: "hsl(43, 75%, 40%)",
+        "brand-blue": {
+          DEFAULT: "hsl(220, 70%, 50%)",
+          light: "hsl(220, 70%, 60%)",
+          dark: "hsl(220, 80%, 40%)",
         },
-        charcoal: {
-          DEFAULT: "hsl(0, 0%, 7%)",
-          light: "hsl(0, 0%, 12%)",
-          dark: "hsl(0, 0%, 5%)",
+        "brand-red": {
+          DEFAULT: "hsl(0, 75%, 55%)",
+          light: "hsl(0, 75%, 65%)",
+          dark: "hsl(0, 80%, 45%)",
         },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
@@ -102,14 +102,14 @@ export default {
         float: "float 3s ease-in-out infinite",
       },
       backgroundImage: {
-        "gradient-gold": "linear-gradient(135deg, hsl(43, 65%, 52%) 0%, hsl(43, 75%, 40%) 100%)",
-        "gradient-gold-shine": "linear-gradient(135deg, hsl(43, 65%, 60%) 0%, hsl(43, 65%, 52%) 50%, hsl(43, 75%, 40%) 100%)",
-        "gradient-dark": "linear-gradient(180deg, hsl(0, 0%, 10%) 0%, hsl(0, 0%, 7%) 100%)",
+        "gradient-primary": "linear-gradient(135deg, hsl(220, 70%, 50%) 0%, hsl(220, 80%, 40%) 100%)",
+        "gradient-accent": "linear-gradient(135deg, hsl(0, 75%, 55%) 0%, hsl(0, 80%, 45%) 100%)",
+        "gradient-section": "linear-gradient(180deg, hsl(220, 10%, 96%) 0%, hsl(0, 0%, 98%) 100%)",
       },
       boxShadow: {
-        gold: "0 4px 30px -5px hsla(43, 65%, 52%, 0.3)",
-        "gold-lg": "0 8px 40px -5px hsla(43, 65%, 52%, 0.4)",
-        card: "0 8px 32px -4px hsla(0, 0%, 0%, 0.5)",
+        primary: "0 4px 30px -5px hsla(220, 70%, 50%, 0.25)",
+        "primary-lg": "0 8px 40px -5px hsla(220, 70%, 50%, 0.35)",
+        card: "0 4px 20px -4px hsla(220, 20%, 15%, 0.08)",
       },
     },
   },

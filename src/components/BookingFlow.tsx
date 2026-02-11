@@ -179,7 +179,7 @@ export function BookingFlow({ onComplete, onAuthRequired }: BookingFlowProps) {
               <motion.div
                 animate={{
                   scale: isActive ? 1.1 : 1,
-                  backgroundColor: isCompleted || isActive ? 'hsl(43, 65%, 52%)' : 'hsl(var(--muted))',
+                  backgroundColor: isCompleted || isActive ? 'hsl(220, 70%, 50%)' : 'hsl(var(--muted))',
                 }}
                 className="w-10 h-10 rounded-full flex items-center justify-center mb-2"
               >

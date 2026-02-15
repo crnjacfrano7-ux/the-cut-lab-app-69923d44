@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { Scissors, Menu, X, User, LogOut, LayoutDashboard } from 'lucide-react';
+import { Scissors, Menu, X, User, LogOut, LayoutDashboard, CalendarDays } from 'lucide-react';
 import { useAuth } from '@/hooks/useAuth';
 import { useUserRole } from '@/hooks/useUserRole';
 import { Button } from './ui/button';
@@ -59,15 +59,19 @@ export function Header() {
                     {user.email}
                   </DropdownMenuItem>
                   <DropdownMenuSeparator />
+                  <DropdownMenuItem onClick={() => navigate('/my-reservations')}>
+                        <CalendarDays className="w-4 h-4 mr-2" />
+                        Moje Rezervacije
+                      </DropdownMenuItem>
                   {(isBarber || isAdmin) && (
                     <>
                       <DropdownMenuItem onClick={() => navigate('/dashboard')}>
                         <LayoutDashboard className="w-4 h-4 mr-2" />
                         Nadzorna Ploča
                       </DropdownMenuItem>
-                      <DropdownMenuSeparator />
                     </>
                   )}
+                  <DropdownMenuSeparator />
                   <DropdownMenuItem onClick={handleSignOut}>
                     <LogOut className="w-4 h-4 mr-2" />
                     Odjava
@@ -127,6 +131,15 @@ export function Header() {
               
               {user ? (
                 <>
+                  <Button
+                    variant="outline-gold"
+                    onClick={() => {
+                      navigate('/my-reservations');
+                      setMobileMenuOpen(false);
+                    }}
+                  >
+                    Moje Rezervacije
+                  </Button>
                   {(isBarber || isAdmin) && (
                     <Button
                       variant="outline-gold"

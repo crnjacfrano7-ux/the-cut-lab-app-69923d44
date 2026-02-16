@@ -43,11 +43,11 @@ export function Footer() {
           <div>
             <h4 className="font-serif font-semibold mb-4">Kontakt</h4>
             <ul className="space-y-3">
-              <li className="flex items-center gap-2 text-muted-foreground text-sm">
+              <li className="flex items-center gap-2 text-muted-foreground text-sm">Solde 9, Međugorje
                 <MapPin className="w-4 h-4 text-primary" />
                 Biskupa Čule bb, Mostar
               </li>
-              <li className="flex items-center gap-2 text-muted-foreground text-sm">
+              <li className="flex items-center gap-2 text-muted-foreground text-sm">063 878-211
                 <Phone className="w-4 h-4 text-primary" />
                 063 629-436
               </li>
@@ -76,6 +76,6 @@ export function Footer() {
           <p>&copy; {new Date().getFullYear()} Meštar Barber Shop. Sva prava pridržana.</p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>);
+
 }

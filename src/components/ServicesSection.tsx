@@ -16,11 +16,11 @@ export function ServicesSection({ onSelectService }: ServicesSectionProps) {
   }, []);
 
   const fetchServices = async () => {
-    const { data, error } = await supabase
-      .from('services')
-      .select('*')
-      .eq('is_active', true)
-      .order('price');
+    const { data, error } = await supabase.
+    from('services').
+    select('*').
+    eq('is_active', true).
+    order('price');
 
     if (!error && data) {
       setServices(data);
@@ -34,38 +34,38 @@ export function ServicesSection({ onSelectService }: ServicesSectionProps) {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <span className="text-primary text-sm font-medium uppercase tracking-wider">
-            Naše Usluge
+          className="text-center mb-16">
+
+          <span className="text-primary text-sm font-medium uppercase tracking-wider">PONUDA
+
           </span>
-          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-3 mb-4">
-            Premium Njega
+          <h2 className="text-4xl md:text-5xl font-serif font-bold mt-3 mb-4">Usluge & Cjenovnik
+
           </h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            Od klasičnih frizura do modernih fade-ova, naši stručni frizeri pružaju 
-            preciznost i stil u svakoj usluzi.
+
+
           </p>
         </motion.div>
 
         <div className="grid gap-6 md:grid-cols-2 max-w-4xl mx-auto">
-          {services.map((service, index) => (
-            <motion.div
-              key={service.id}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-            >
+          {services.map((service, index) =>
+          <motion.div
+            key={service.id}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: index * 0.1 }}>
+
               <ServiceCard
-                service={service}
-                selected={false}
-                onSelect={() => onSelectService(service)}
-              />
+              service={service}
+              selected={false}
+              onSelect={() => onSelectService(service)} />
+
             </motion.div>
-          ))}
+          )}
         </div>
       </div>
-    </section>
-  );
+    </section>);
+
 }

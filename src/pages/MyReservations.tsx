@@ -160,7 +160,7 @@ export default function MyReservations() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center gap-4">
               <Link to="/" className="flex items-center gap-2">
-                <img src="/favicon.png" alt="Meštar" className="w-8 h-8 object-contain" />
+<img src="/logo.png" alt="Meštar" className="w-8 h-8 object-contain" />
                 <span className="font-serif text-xl font-bold">Meštar</span>
               </Link>
               <span className="text-muted-foreground">|</span>
